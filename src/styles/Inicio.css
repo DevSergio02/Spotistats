@@ -1,0 +1,135 @@
+body {
+  background-color: #000000;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "CircularStdBlack";
+  color: white;
+}
+
+select {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: "CircularStdMedium";
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: "CircularStdMedium";
+  background-color: #ffffff;
+  color: black;
+  cursor: text;
+  text-align: center;
+}
+
+.home-container {
+  padding: 20px;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  font-family: "CircularStdBlack";
+}
+
+.title-container img {
+  width: 37px;
+  margin-right: 20px;
+}
+
+.buttons-container button {
+  margin-left: 10px;
+}
+
+.artistas-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select-input-container select {
+  margin-right: 10px;
+}
+
+.artistas-container,
+.canciones-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.artista-item:hover,
+.cancion-item:hover {
+  transform: translateY(-5px);
+}
+
+.artista-item img,
+.cancion-item img {
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  object-position: center;
+}
+
+.artista-item img {
+  border-radius: 50%;
+}
+
+.cancion-item img {
+  border-radius: 0;
+}
+
+.artista-item:hover img,
+.cancion-item:hover img {
+  transform: scale(1.05);
+}
+
+.artista-item,
+.cancion-item {
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  max-width: 200px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.artista-item h2,
+.cancion-item h2 {
+  margin-top: 10px;
+  font-size: 16px;
+}
